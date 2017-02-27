@@ -82,7 +82,7 @@ HELP;
         }
 
         if (!$noReinitOption) {
-            $this->reinitCache();
+            //$this->reinitCache();
         }
     }
 }
