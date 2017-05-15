@@ -41,6 +41,7 @@ class DbCommand extends AbstractLogCommand
 
         $this->_replaceVariable($input, $output, '$_debug');
         $this->_replaceVariable($input, $output, '$_logAllQueries');
+        $this->_replaceVariable($input, $output, '$_logCallStack');
 
         $output->writeln("<info>Done. You can tail <comment>" . $this->_getDebugLogFilename() . "</comment></info>");
     }
